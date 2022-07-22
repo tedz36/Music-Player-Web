@@ -1,0 +1,236 @@
+:root{
+  --clr-background: #fff;
+  --clr-header: header.png;
+  --clr-sidebar:  white;
+  --clr-sidebarLetter: #000;
+  --clr-textbox: white;
+  --clr-sidebarLU: #Ffff6f;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: white; /*<----- changable background*/
+    background-attachment: fixed;
+  background-position: all;
+  background-size: cover;
+}
+
+header{
+  position: fixed;
+  background: var(--clr-header); /*<---- header changable*/
+  padding: 20px;
+  width: 100%;
+  height: 20px;
+}
+
+.container{
+  position: absolute;
+  width: 80%;
+  top: 10%;
+  left: 20%;
+  bottom: 0px;
+  right: 0px;
+}
+
+.box img {
+  width:150px;
+  height:140px;
+}
+.box{
+  padding: 1px;
+  border: 1px;
+  position: absolute;
+  bottom: 280px;
+  height: 150px;
+  width: 100px;
+  border-radius: 1px;
+  color: var(--clr-sidebarLetter);
+  background-color: var(--clr-textbox);  
+    background-clip:border-box;
+    text-align: center;
+}
+
+.seccontainer{
+  position: absolute;
+  width: 80%;
+  top: 60%;
+  left: -13.5%;
+  bottom: 0px;
+  right: 0px;
+}
+
+.secbox img {
+  width:150px;
+  height:140px;
+}
+.secbox{
+  padding: 1px;
+  border: 1px;
+  position: absolute;
+  bottom: 60px;
+  height: 150px;
+  width: 100px;
+  border-radius: 1px;
+  color: var(--clr-sidebarLetter);
+  background-color: var(--clr-textbox);  
+    background-clip:border-box;
+    text-align: center;
+}
+
+#box1 {
+  margin-left: 0px;
+}
+
+#box2 {
+  margin-left: 180px;
+}
+
+#box3 {
+  margin-left: 360px;
+}
+
+#box4 {
+  margin-left: 540px;
+}
+
+#box5 {
+  margin-left: 720px;
+}
+
+#box6 {
+  margin-left: 455px;
+}
+
+#box7 {
+  margin-left: 635px;
+}
+
+#box8 {
+  margin-left: 815px;
+}
+
+#box9 {
+  margin-left: 995px;
+}
+
+#box10 {
+  margin-left: 1175px;
+}
+
+.left_area h3{
+  color: #fff;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.left_area span{
+  color: var(--clr-sidebarLU);
+}
+
+.sidebar{
+  background: var(--clr-sidebar); /*<---- Sidebar color*/
+  margin-top: 70px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+}
+
+.sidebar a{
+  color: var(--clr-sidebarLetter); /*<---- sidebar letter colors*/
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover{
+  background: var(--clr-sidebarLU); /*<---- light-up color in the sidebar*/
+}
+
+.sidebar i{
+  padding-right: 10px;
+}
+
+.banner{
+  width: 0%;
+  line-height: 0px;
+}
+
+label #sidebar_btn{
+  z-index: 1;
+  color: #ff4d4d;
+  position: fixed;
+  cursor: pointer;
+  left: 50px;
+  font-size: 25px;
+  margin: 5px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover{
+  color: #ffe6cc;
+}
+
+#check:checked ~ .sidebar{
+  left: -140px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 120px;
+  width: 80px;
+}
+
+.content{
+  margin-left: 200px; /*optional if we want moving background according to side bar*/
+  height: 100vh;
+  transition: 0.5s;
+}
+
+#check:checked ~ .content{
+  margin-left: 60px;  /*effects of resizing background from above*/
+}
+
+#check{
+  display: none;
+}
+
+.btnlogout{
+ 
+  position: absolute;
+  top: -140%;
+  left: 127.4%;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 70px;
+  background: #fb2525; /*<----login button color*/
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  
+  }
+
+  .btnlogout:hover{
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+  }
